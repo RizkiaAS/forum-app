@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "jest": true,
+        "cypress/globals": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard",
+        "plugin:react/jsx-runtime"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "cypress"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": "off",
+        "no-unused-expressions": "off"
+    }, 
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
