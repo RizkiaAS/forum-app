@@ -93,7 +93,6 @@ function asyncToggleUpVoteAThread (threadId) {
 function asyncToggleDownVoteAThread (threadId) {
   return async (dispatch, getState) => {
     dispatch(showLoading())
-    const { ownProfile, threads } = getState()
     dispatch(downVoteAThreadActionCreator(threadId, ownProfile.id))
     threads.find(thread => thread.id === threadId).upVotesBy.includes(ownProfile.id) && dispatch(upVoteAThreadActionCreator(threadId, ownProfile.id))
 
