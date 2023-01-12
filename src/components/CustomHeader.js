@@ -21,7 +21,7 @@ function CustomHeader () {
       <nav>
           <StyledLogo>
             <span className="material-symbols-outlined">forum</span>
-            <h1>NGOCEH</h1>
+            <h1>NGOCEH V2</h1>
           </StyledLogo>
           {ownProfile.name &&
             <div>
