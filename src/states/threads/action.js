@@ -61,7 +61,7 @@ function asyncPostThread (newThread) {
     dispatch(showLoading())
     try {
       const uploadedThread = await api.postThread(local.getAccessToken(), newThread)
-      dispatch(addThreadActionCreator(uploadedThread))
+      dispatch(addThreadActionCreator())
     } catch (error) {
       alert(error.message)
     } finally {
