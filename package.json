@@ -21,8 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "e2e": "cypress run",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "ci:test": "react-scripts test --watchAll=false && start-server-and-test start http-get://0.0.0.0:3000 e2e"
   },
   "eslintConfig": {
     "extends": [
@@ -65,6 +64,7 @@
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-storybook": "^0.6.10",
     "prop-types": "^15.8.1",
+    "start-server-and-test": "^1.15.2",
     "webpack": "^5.75.0"
   }
 }
